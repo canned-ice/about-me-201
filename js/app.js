@@ -1,8 +1,13 @@
 'use strict';
+var userName = '';
 
 // Get userName and ask if they want to play a game
-var userName = prompt('Hi, what\'s your name?');
-console.log('userName entered:', userName);
+function getName () {
+  var name = prompt('Hi, what\'s your name?');
+  console.log('userName entered:', name);
+  return name;
+};
+userName = getName();
 var gameInit = prompt('Greetings, ' + userName + '! Would you like to play a game?\nType Y or Esc to reach main site').toUpperCase();
 console.log('gameInit value entered:', gameInit);
 
